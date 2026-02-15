@@ -1,5 +1,5 @@
-selenium,
-opencv-python,
-numpy, 
-Pillow,
+selenium
+opencv-python
+numpy
+Pillow
 pyautogui
