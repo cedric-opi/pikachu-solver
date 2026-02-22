@@ -97,7 +97,7 @@ public:
             int r = p1.r + dr[dir];
             int c = p1.c + dc[dir];
             while (inside(r, c) && emptyCell(r, c)) {
-                Point mid{r, c}; // góc rẽ đầu tiên 
+                Point mid{r, c}; // góc rẽ đầu tiên     
                 if (checkL(mid, p2)) return true; // (mid, p2) sẽ là góc rẽ thứ hai
                 // tiếp tục mở rộng các phía 
                 r += dr[dir]; 
@@ -153,7 +153,7 @@ public:
         return false;
     }
 
-    // vòng lặp điều khiển (chơi cả ván game)
+    // vòng lặp điều khiển game: trong khi còn tồn tại cặp nối được -> xoá cặp đó đi -> tiếp tục tìm cặp mới trên board đã xoá
     // verbose: in log chi tiết
     int solveBoard(bool verbose = true) {
     int step = 0;

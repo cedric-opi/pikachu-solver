@@ -27,7 +27,7 @@ def click_cell(element):
         # Nếu ko tìm thấy img thì click thẳng vào div
         driver.execute_script("arguments[0].click();", element)
 
-# Hàm quét bảng game và trả về ma trận cùng map tọa độ 
+# Hàm đọc dữ liệu từ trình duyệt (thông qua Selenium) và chuyển thành một ma trận số học
 def get_board_from_web():
     try:
         # Tìm tất cả các div có chứa img nằm bất cứ đâu bên trong thẻ có id='board'
